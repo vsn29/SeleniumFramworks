@@ -1,0 +1,8 @@
+//Handling Dynamic Drop Down in selenium
+//=====================================================================
+
+package com.seleniumBasics;
+
+public class DynamicDropDown {
+
+}
