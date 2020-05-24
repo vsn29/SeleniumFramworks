@@ -1,0 +1,41 @@
+package com.seleniumBasics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class AutoSuggestive {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		// System Property for Chrome Driver
+		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumCourse\\chromedriver_win32\\chromedriver.exe");
+
+		// Instantiate a ChromeDriver class.
+		WebDriver driver = new ChromeDriver();
+
+		// Launch Website
+		driver.navigate().to("https:\\www.google.com");
+
+		driver.manage().window().maximize();
+		
+		WebElement link = driver.findElement(By.className("gb_P"));
+		Actions act = new Actions(driver);
+		act.keyDown(Keys.SHIFT).click(link).keyUp(Keys.SHIFT).build().perform();
+		Thread.sleep(5000);
+		
+		/*
+		 * driver.findElement(By.
+		 * xpath("//input[@class='react-autosuggest__input react-autosuggest__input--open']"
+		 * )).sendKeys(Keys.ENTER);
+		 * 
+		 * Thread.sleep(5000);
+		 */
+
+	}
+
+}
