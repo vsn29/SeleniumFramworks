@@ -1,0 +1,8 @@
+package com.seleniumBasics;
+
+public class EcommerceAppTest {
+
+	public static void main(String[] args) {
+
+	}
+}

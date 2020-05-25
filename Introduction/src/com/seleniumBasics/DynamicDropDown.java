@@ -19,32 +19,39 @@ public class DynamicDropDown {
 		WebDriver driver = new ChromeDriver();
 
 		// Launch Website
-		driver.navigate().to("http://spicejet.com");
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
 		driver.manage().window().maximize();
 
 		Thread.sleep(5000);
 
-		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
-
+		driver.findElement(By.xpath("//input[@name='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+	
+        //Select Bangalore as Source
 		driver.findElement(By.xpath("//a[@value='BLR']")).click();
-		
-		Thread.sleep(2000);
 
-		// driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
-
-		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']"))
-				.click();
 		Thread.sleep(2000);
 
 		/*
-		 * driver.findElement(By.cssSelector(
-		 * ".ui-state-default.ui-state-highlight.ui-state-active")).click();
+		 * driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
 		 */
-
-		Thread.sleep(2000);
-		// Close the Browser
-		driver.close();
+		
+		//Entering the Destination
+		/*
+		 * driver.findElement(By.xpath(
+		 * "//input[@name='ctl00_mainContent_ddl_destinationStation1_CTXT']")).click();
+		 */
+		 //Select the Destination Chennai(MAA) : locating element using Parent-child relationship
+		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();  
+		
+		  Thread.sleep(2000);
+		  
+		  //Clicks on the Current Date once the Source and Destinations are selected
+		  driver.findElement(By.cssSelector("#ctl00_mainContent_view_date2")).click();
+		 
+         //Close Browser
+		  
+		  driver.close();
 	}
 
 }

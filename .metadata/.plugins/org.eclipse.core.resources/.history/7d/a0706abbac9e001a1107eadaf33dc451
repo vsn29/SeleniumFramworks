@@ -1,0 +1,46 @@
+package com.seleniumBasics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AlertsDemo {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		String text = "Vijaya";
+		// System Property for Chrome Driver
+		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumCourse\\chromedriver_win32\\chromedriver.exe");
+
+		// Instantiate a ChromeDriver class.
+		WebDriver driver = new ChromeDriver();
+
+		// Launch Website
+		driver.navigate().to("https://www.rahulshettyacademy.com/AutomationPractice");
+
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+
+		driver.findElement(By.id("name")).sendKeys(text);
+		Thread.sleep(2000);
+
+		driver.findElement(By.cssSelector("[id='alertbtn']")).click();
+		Thread.sleep(2000);
+
+		System.out.println(driver.switchTo().alert().getText());
+
+		Thread.sleep(2000);
+
+		driver.switchTo().alert().accept();
+
+		Thread.sleep(2000);
+
+		driver.findElement(By.cssSelector("[id='confirmbtn']")).click();
+		Thread.sleep(2000);
+
+		System.out.println(driver.switchTo().alert().getText());
+		
+		driver.switchTo().alert().dismiss();
+
+	}
+}
