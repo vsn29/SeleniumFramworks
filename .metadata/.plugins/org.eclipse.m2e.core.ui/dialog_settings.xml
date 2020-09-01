@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SeleniumCourse\SeleniumPractice\Test"/>
 			<item value="C:\SeleniumCourse\SeleniumPractice\Introduction\src\com\seleniumBasics\DynamicDropDown.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,10 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Selenium.POMFrameworkDemo"/>
 		</list>
 		<list key="groupId">
+			<item value="Selenium"/>
 		</list>
 		<list key="artifactId">
+			<item value="POMFrameworkDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

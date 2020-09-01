@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+	<test name="HomePage">
+		<parameter name="browser" value="chrome-headless" />
+		<parameter name="url" value="https://flipkart.com" />
+		<parameter name="execution" value="grid" />
+		<classes>
+			<class name="com.amelia.test.flights.FlightC" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

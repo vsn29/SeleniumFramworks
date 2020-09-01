@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/ant-1.6.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/bcprov-jdk15-135.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/org.mortbay.jetty-5.1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/selenium-core-1.0-20080914.225453.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/selenium-server-1.0-20081010.060147.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/selenium-server-coreless-1.0-20081010.060147.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/xmlrpc-client-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/xmlrpc-common-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/testlink-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Viju/Desktop/JAR Files/org-apache-ws-commons-util.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

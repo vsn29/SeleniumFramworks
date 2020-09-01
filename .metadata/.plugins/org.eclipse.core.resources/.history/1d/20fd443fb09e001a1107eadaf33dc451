@@ -1,9 +1,0 @@
-//Handling Radio buttons in selenium:
-//============================================================
-
-
-package com.seleniumBasics;
-
-public class RadioButtonsDemo {
-
-}

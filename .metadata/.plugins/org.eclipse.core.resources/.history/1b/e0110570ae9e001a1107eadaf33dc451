@@ -1,7 +1,0 @@
-//Handling Calendar UI in Selenium
-
-package com.seleniumBasics;
-
-public class CalendarUI {
-
-}

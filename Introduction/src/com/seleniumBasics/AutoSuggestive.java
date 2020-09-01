@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.object.page.HomePage;
+
 public class AutoSuggestive {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -20,18 +22,32 @@ public class AutoSuggestive {
 		// Launch Website
 		driver.get("https://www.makemytrip.com"); // URL in the browser
 
-		WebElement source = driver.findElement(By.xpath("//span[@class='chNavText darkGreyText'][1]"));
-		source.clear();
-		source.sendKeys("MUM");
-		Thread.sleep(2000);
-		source.sendKeys(Keys.ENTER);
+		Thread.sleep(5000);
 
-		WebElement destination = driver.findElement(By.id("hp-widget__sTo"));
-		destination.clear();
-		destination.sendKeys("DEL");
-		Thread.sleep(2000);
-		destination.sendKeys(Keys.ARROW_DOWN);
-		destination.sendKeys(Keys.ENTER);
+		HomePage homepage = new HomePage(driver);
 
+		// WebElement source = driver.findElement(By.xpath("//span[@class='chNavText
+		// darkGreyText'][1]"));
+
+		homepage.source.click();
+		homepage.sourceSearch.sendKeys("MUM");
+		homepage.sourceSearch.sendKeys(Keys.ARROW_DOWN);
+		homepage.sourceSearch.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+
+		// WebElement destination = driver.findElement(By.id("hp-widget__sTo"));
+		//homepage.destinationSearch.click();
+		homepage.destinationSearch.sendKeys("MAA");
+		Thread.sleep(2000);
+		homepage.destinationSearch.sendKeys(Keys.ARROW_DOWN);
+		Thread.sleep(2000);
+		homepage.destinationSearch.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+		homepage.hotels.click();
+
+		// Close Browser
+
+		driver.close();
 	}
+
 }
