@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amelia.test.flights.FlightAb">
+      <class name="com.amelia.test.flights.FlightAe">
         <methods>
-          <include name="oneWayFlightSearch" invocation-numbers="0"/>
           <include name="close"/>
+          <include name="oneWayFlightSearch" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.amelia.test.flights.FlightAb -->
+      </class> <!-- com.amelia.test.flights.FlightAe -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

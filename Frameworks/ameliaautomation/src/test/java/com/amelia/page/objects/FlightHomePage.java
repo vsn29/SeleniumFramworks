@@ -60,6 +60,9 @@ public class FlightHomePage {
 	@FindBy(how = How.XPATH , using = "(//span[@class='c-switch switch-off'])[1]")
 	public WebElement nonStopPreference;
 	
+	@FindBy(how = How.XPATH , using = "(//span[@class='u-ib u-rfloat'])[2]")
+	public WebElement refundablePreference;
+	
 	
 	
 	
